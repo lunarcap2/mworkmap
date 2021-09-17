@@ -1,0 +1,201 @@
+@charset "utf-8";
+@import url('reset.css');
+
+/* COMMON */
+/* form */
+form{padding:0;margin:0;}
+select{font-family:"Malgun Gothic","맑은 고딕";font-size:1.4rem;color:#000;background:#fff;}
+label{cursor:pointer;}
+label,
+label input{vertical-align:top;}
+label span{color:#000;font-size:16px;}
+input.txt{height:3.2rem;border:1px solid #aeaeae;color:#000;font-family:"Malgun Gothic","맑은 고딕";font-size:1.4rem;line-height:1;text-indent:1rem;*text-indent:0;vertical-align:top;box-sizing:border-box;letter-spacing:-0.075rem;}
+input.chk{width:1.5rem;height:1.4rem;opacity:0;filter:alpha(opacity=0);}
+input.rdi{width:1.7rem;height:1.7rem;color:#000;font-size:1.4rem;opacity:0;filter:alpha(opacity=0);}
+label.checkbox{display:inline-block;zoom:1;*display:inline;height:1.5rem;line-height:1.4rem;vertical-align:middle;}
+label.radiobox{display:inline-block;zoom:1;*display:inline;height:1.8rem;line-height:1.8rem;vertical-align:middle;}
+label.radiobox,
+label.checkbox{margin-left:1.8rem;}
+label.radiobox.lb,
+label.checkbox.lb,
+label.radiobox:first-child,
+label.checkbox:first-child{margin-left:0 !important;}
+label.radiobox span,
+label.checkbox span{/* position:relative;top:-2px;*/margin-left:1rem;}
+label.radiobox{background:url(http://image.career.co.kr/mobile/event/2018/jobwin/pop_form.png) no-repeat 0 0;background-size:5rem 20rem;}
+label.radiobox.on{background-position:0 -2.7rem;}
+label.checkbox{background:url(http://image.career.co.kr/mobile/event/2019/jobwin/pop_form.png) no-repeat 0 -5.3rem;background-size:5rem 20rem;}
+label.checkbox.on{background-position:0 -7.7rem;}
+span.selectbox{position:relative;display:inline-block;*display:inline;zoom:1;height:3.2rem;overflow:hidden;*margin-left:5px;vertical-align:middle;text-align:left;}
+span.selectbox span{display:block;height:auto;overflow:hidden;padding:0.8rem 2.6rem 0.8rem 0.4rem;background:#fff url(http://image.career.co.kr/mobile/event/2019/jobwin/pop_form.png) no-repeat 95% -10.5rem;background-size:5rem 20rem;border:1px solid #aeaeae;color:#000;font-size:1.4rem;line-height:1;letter-spacing:-0.075rem;}
+span.selectbox select{z-index:1;position:absolute;left:0;top:0;width:100%;height:100%;margin:0;padding:0;opacity:0;filter:alpha(opacity=0);}
+
+
+/* VISUAL */
+.contents .visual_area{position: relative; display: block; z-index: 100;}
+.contents .visual_area > img{width:100%;}
+/* SPRITE */
+.sprite,
+.sprite:before,
+.sprite:after{content:"";display:inline-block;clear:both;background:url(../images/sprite_bg.png) no-repeat 0 0;background-size:10rem 15rem;}
+.ir{margin:0 auto;}
+dl.ir {margin:0 auto 4rem;}
+
+/* SKIP */
+.skipContents{position:absolute;left:-5000em;top:-5000em;font-size:1px;line-height:1px}
+
+/* LAYOUT */
+#wrap{overflow:hidden;min-width:320px;}
+#container{position:relative;z-index:1;padding-top:4.5rem;}
+#container.popup{padding-top:0;}
+#container header h2,
+#container header h3{padding-bottom:2.5rem;}
+#container .sec3 h2{padding-bottom:-4rem;}
+#container .contents > article{position:relative;padding:0rem 0;}
+#container .contents > #sec4 {padding-bottom:7rem;}
+
+/* HEADER */
+#header{display:none;position:fixed;z-index:2;width:100%;height:4.5rem;background-color:#fff;}
+#header h1{position:absolute;left:50%;bottom:0;width:11.8rem;height:3.3rem;margin-left:-5.9rem;}
+#header h1 a{display:block;width:100%;height:100%;}
+#header .util a{display:block;position:absolute;bottom:0;width:2.9rem;height:2.9rem;text-indent:-9999px;}
+#header .util .goBack{left:1rem;background-position:0 0;}
+#header .util .goHome{right:1rem;background-position:-3.8rem 0;}
+
+/* GNB */
+#gnb{position:fixed;top:0;z-index:2;width:100%;}
+#gnb ul{position:relative;z-index:1;padding:1.5rem 0;border-bottom:1px solid #000;background-color:#fff;box-shadow:0 0.3rem 0 rgba(000, 000, 000, 0.1);}
+#gnb ul:after{content:"";display:block;clear:both;}
+#gnb ul li{float:left;width:25%;height:1.4rem;text-align:center;}
+#gnb ul li:last-child{width:25%;}
+#gnb ul li a{display:block;position:relative;width:5.9rem;height:1.6rem;margin:0 auto;background:url(../images/gnb.png) no-repeat;background-size:30rem 3.5rem;text-indent:-9999em;}
+#gnb ul li:nth-child(1) a{background-position:0 0;}
+#gnb ul li:nth-child(2) a{background-position:-8rem 0;}
+#gnb ul li:nth-child(3) a{background-position:-16.2rem 0;}
+#gnb ul li:nth-child(4) a{background-position:-23.4rem 0;width:8.7rem;}
+#gnb ul li.on:nth-child(1) a{background-position:0 -2rem;}
+#gnb ul li.on:nth-child(2) a{background-position:-8rem -2rem;}
+#gnb ul li.on:nth-child(3) a{background-position:-16.2rem -2rem;}
+#gnb ul li.on:nth-child(4) a{background-position:-23.4rem -2rem;}
+#gnb .callcenter{position:absolute;right:0;bottom:-6rem;width:14.9rem;height:6rem;background:url(http://image.career.co.kr/mobile/event/2019/jobwin/callcenter.png) no-repeat 0 0;background-size:14.9rem auto;}
+
+/* BTN */
+.btnArea{text-align:center;}
+.btnArea a{display:block;}
+
+/* CONTENTS */
+/* 메인 */
+.sec0{}
+.sec0 .titArea h2{width:29.3rem;height:14.1rem;background:url(../images/main_tit_h2.png) no-repeat 0 0;background-size:29.3rem 14.1rem;}
+
+.sec0 .btnArea{padding-top:2.4rem; background:#356cbb; margin-top:-4rem;}
+.sec0 .btnArea a{width:24rem;height:7.7rem;background:url(../images/main_btn.png) no-repeat 0 0;background-size:24rem 7.7rem;}
+
+/* 프로세스 */
+.sec1{background-color:#fff;}
+.sec1 .titArea{padding-top:8rem;}
+.sec1 .titArea h2 { width: 36.5rem; height: 8.688rem; background: url(../images/sub1_tit_h2.png) no-repeat 0 0; background-size: 100%; }
+.sec1 .infoArea dl { width: 42rem; height: 22rem; background: url(../images/sub1_img.png) no-repeat 0 0; background-size:100% }
+
+/* 참여자격 */
+.sec2{background-color:#fff;}
+.sec2 .titArea h2{width:36.5rem;height:9.4rem;background:url(../images/sub2_tit_h2.png) no-repeat 0 0;background-size:100%;}
+.sec2 .infoArea dl { width: 35.438rem; height: 100.063rem; background: url(../images/sub2_img.png) no-repeat 0 0; background-size: 100% auto; }
+.sec2 .tableArea h3{width:24.6rem;height:4.7rem;background:url(http://image.career.co.kr/mobile/event/2019/jobwin/sub2_tit_h3.png) no-repeat 0 0;background-size:24.6rem 4.7rem;}
+/*.sec2 .tableArea table{width:32.1rem;height:30.4rem;background:url(http://image.career.co.kr/mobile/event/2019/jobwin/sub2_img2.png) no-repeat 0 0;background-size:32.1rem auto;}*/
+.sec2 .tableArea p {font-size:0;}
+/* 침여혜택 */
+.sec3{background-color:#f0f4ff; padding:5rem 0 1rem 0 !important;}
+.sec3 .titArea h2 { width: 23.3rem; height: 11.5rem; background: url(../images/sub3_tit_h2.png) no-repeat 0 0; background-size: 100% }
+.sec3 .infoArea dl { width: 42rem; height: 34rem; background: url(../images/sub3_img.png) no-repeat 0 0; background-size:100%; margin-top:-3rem; }
+
+/* 위치 및 연락처 */
+.sec4{background:#f0f4ff url(../images/sub4_bg.png) no-repeat 1rem 43.5rem;background-size:/*24.5rem 16.7rem*/100%;}
+.sec4 .titArea h2{width:26.3rem;height:9.5rem;background:url(../images/sub4_tit_h2.png) no-repeat 0 0;background-size:100%;}
+.sec4 .infoArea dl { width: 42rem; height: 34rem; background: url(../images/sub4_img.png) no-repeat 0 0; background-size:100%; margin-top:-3rem; }
+
+.sec4 .tabArea{padding-top:18rem;text-align:center;}
+.sec4 .tabArea ul{display:inline-block;}
+.sec4 .tabArea ul li{float:left;margin-left:0.7rem;}
+.sec4 .tabArea ul li:first-child{margin-left:0;}
+.sec4 .tabArea ul li a{display:block;width:13.6rem;height:5.2rem;background:url(http://image.career.co.kr/mobile/event/2019/jobwin/tab.png) no-repeat;background-size:27.7rem 11.4rem;font-size:0;}
+.sec4 .tabArea ul li:nth-child(1) a{background-position:0 0;}
+.sec4 .tabArea ul li:nth-child(2) a{background-position:-14.1rem 0;}
+.sec4 .tabArea ul li.on:nth-child(1) a{background-position:0 -6.2rem;}
+.sec4 .tabArea ul li.on:nth-child(2) a{background-position:-14.1rem -6.2rem;}
+.sec4 .tabContents{padding-top:1rem;}
+.sec4 .tabContents > div{display:none;width:33.5rem;height:160.4rem;margin:0 auto;background:url(http://image.career.co.kr/mobile/event/2019/jobwin/sub4_img2.png) no-repeat;background-size:33.5rem auto;}
+.sec4 .tabContents > div:first-child{display:block;height:214rem;background:url(http://image.career.co.kr/mobile/event/2019/jobwin/sub4_img1.png) no-repeat;background-size:33.5rem auto;}
+.sec4 .tabContents > div table{font-size:0;}
+.sec4 .tabContents > div table thead th{height:4.1rem;}
+.sec4 .tabContents > div table tbody td{padding:1.1rem 0 1.2rem;height:5rem;vertical-align:top;}
+.sec4 .tabContents > div table tbody td a,
+.sec4 .tabContents > div table tbody td p{display:block;width:100%;height:1.8rem;}
+.sec4 .tabContents > div:nth-child(1) table tbody td.line2{height:7.8rem;}
+.sec4 .tabContents > div:nth-child(1) table tbody td.line2 a:first-child{height:3.8rem;}
+.sec4 .tabContents > div:nth-child(2) table tbody td{height:5.7rem;padding:1rem 0;}
+.sec4 .tabContents > div:nth-child(2) table tbody td a:first-child{height:3.8rem;}
+.sec4 .tabContents > div:nth-child(2) table tbody td.line3 a:first-child{height:6rem;}
+.sec4 .btnArea{padding-top:9.4rem;}
+.sec4 .btnArea a{width:24rem;height:7.7rem;background:url(../images/main_btn2.png) no-repeat 0 0;background-size:/*24rem 7.7rem;*/100%;}
+
+.btnTop{display:none;position:fixed;bottom:2rem;right:1rem;width:6.1rem;height:6.2rem;background-position:0 -8.1rem;font-size:0;}
+
+/* 참가신청 */
+.popWrap{padding-top:0 !important;background-color:#fff;}
+.popWrap .titArea{position:relative;padding:3.2rem 0 15.5rem;border-bottom:1px solid #000;background:#f6da01 url(http://image.career.co.kr/mobile/event/2019/jobwin/pop_bg.png) no-repeat 50% 100%;background-size:23.7rem 13.8rem;box-shadow:0 0.3rem 0 rgba(000, 000, 000, 0.1);}
+.popWrap .titArea h2{width:23rem;height:9.8rem;background:url(http://image.career.co.kr/mobile/event/2019/jobwin/pop_tit_h2.png) no-repeat 0 0;background-size:23rem 9.8rem;}
+.popWrap .titArea button{position:absolute;right:1rem;top:1rem;width:3rem;height:3.2rem;background-position:0 -3.8rem;}
+.popWrap .infoArea{width:31rem;padding:0 1rem;margin:0 auto;}
+.popWrap .tblInput{}
+.popWrap .tblInput col.col1{width:8.5rem;}
+.popWrap .tblInput th{text-align:left;line-height:3.2rem;}
+.popWrap .tblInput th span{display:inline-block;width:100%;height:1.3rem;background:url(http://image.career.co.kr/mobile/event/2019/jobwin/pop_label.png) no-repeat;background-size:15rem 40rem;text-align:left;line-height:3.2rem;font-size:0;vertical-align:middle;}
+.popWrap .tblInput tbody td{position:relative;}
+.popWrap .tblInput tbody .name th span{background-position:0 0;}
+.popWrap .tblInput tbody .phone th span{background-position:0 -2.8rem;}
+.popWrap .tblInput tbody .phone .inp{display:table;width:100%;table-layout:fixed;}
+.popWrap .tblInput tbody .phone .inp > div{display:table-cell;width:31%;table-layout:fixed;}
+.popWrap .tblInput tbody .phone span.selectbox{width:100%;}
+.popWrap .tblInput tbody .phone span.txt{display:inline-block;width:100%;text-align:center;}
+.popWrap .tblInput tbody .addr th span{background-position:0 -5.4rem;}
+.popWrap .tblInput tbody .email th span{background-position:0 -8.1rem;vertical-align:1.8rem;}
+.popWrap .tblInput tbody .email .inp .email1{position:relative;padding-right:2rem;}
+.popWrap .tblInput tbody .email .inp .email1 span.txt{position:absolute;right:0;top:0;}
+.popWrap .tblInput tbody .email .inp .email2{padding-top:1rem;}
+.popWrap .tblInput tbody .birth th span{background-position:0 -10.8rem;}
+.popWrap .tblInput tbody .birth .inp{display:table;width:100%;table-layout:fixed;}
+.popWrap .tblInput tbody .birth .inp > div{display:table-cell;width:26%;table-layout:fixed;}
+.popWrap .tblInput tbody .birth .inp span.txt {margin-left:0.2rem;}
+.popWrap .tblInput tbody .academic th span{background-position:0 -13.4rem;}
+.popWrap .tblInput tbody .academic span.selectbox{width:33%;}
+.popWrap .tblInput tbody .school th span{background-position:0 -16.1rem;}
+.popWrap .tblInput tbody .major th span{background-position:0 -18.8rem;}
+.popWrap .tblInput tbody .studentId th span{background-position:0 -21.5rem;}
+.popWrap .tblInput tbody .gradu th span{background-position:0 -24.1rem;}
+.popWrap .tblInput tbody .gradu .inp input.txt{width:6.6rem;}
+.popWrap .tblInput tbody .gradu .inp span.txt {margin-left:0.2rem;}
+.popWrap .tblInput tbody .insurance th span{background-position:0 -26.8rem;}
+.popWrap .tblInput tbody .legal th span{background-position:0 -29.6rem;}
+.popWrap .tblInput tbody .branch th span{background-position:0 -32.2rem;}
+.popWrap .tblInput tbody .graduation th span{background-position:0 -34.9rem;}
+.branch1 span.selectbox {display:block;}
+.graduation span.selectbox {display:block;}
+.popWrap .tblInput tr:first-child th,
+.popWrap .tblInput tr:first-child td{padding-top:1rem;border-top:1px solid #d1d1d1;}
+.popWrap .tblInput tr:last-child th,
+.popWrap .tblInput tr:last-child td{padding-bottom:1rem;}
+.popWrap .tblInput:first-child{padding-top:0;}
+.popWrap .tblInput:first-child tr:first-child th,
+.popWrap .tblInput:first-child tr:first-child td{padding-top:1.5rem;border-top:none;}
+.popWrap .tblInput.type tr:first-child th,
+.popWrap .tblInput.type tr:first-child td{padding-top:0;}
+.popWrap .tblInput td{}
+.popWrap .tblInput td > div{width:100%;padding:0.5rem 0;font-size:1.4rem;color:#000;line-height:3.2rem;vertical-align:middle;text-align:left;}
+.popWrap .agreeArea{width:32rem;height:9.1rem;padding:1rem 0 0;margin:0 auto;border-top:1px solid #d1d1d1;}
+.popWrap .agreeArea span{display:inline-block;width:25rem;height:3.3rem;background:url(http://image.career.co.kr/mobile/event/2019/jobwin/pop_agree_txt1.png) no-repeat 0 0;background-size:25rem 3.3rem;font-size:0;}
+.popWrap .agreeArea p{width:25rem;height:4.7rem;margin:3rem 0 0 3rem;background:url(http://image.career.co.kr/mobile/event/2019/jobwin/pop_agree_txt2.png) no-repeat 0 0;background-size:25rem 4.7rem;font-size:0;}
+.popWrap .btnArea{padding-top:2.4rem;}
+.popWrap .btnArea button{width:24rem;height:7.7rem;background:url(http://image.career.co.kr/mobile/event/2019/jobwin/pop_btn.png) no-repeat 0 0;background-size:24rem 7.7rem;}
+
+/* //CSS */

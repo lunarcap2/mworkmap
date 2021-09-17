@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* Tablet & Desktop Device */
+html {font-size:10px;}
+/* Mobile Device */
+@media (min-width:768px){
+	html {font-size:18px;}
+}
+
+/* INITIALIZE */
+*{margin:0;padding:0;-webkit-text-size-adjust:none}
+html{-webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-touch-callout:none; -webkit-user-select:none;}
+html, *{outline:0;}
+html,body{width:100%;height:100%}
+body{background-color:#fff}
+em,i,address{font-style:normal}
+dl,ul,ol{list-style:none}
+img,button,fieldset,iframe,hr{border:0}
+img{max-width:100%;vertical-align:top}
+input,textarea,select,button,table{font-size:inherit;font-family:inherit;line-height:inherit}
+button{cursor:pointer}
+button::-moz-focus-inner{padding:0;border:none}
+textarea,input{outline-color:-moz-use-text-color;outline-style:none;outline-width:medium}
+textarea{-webkit-appearance:none;resize:none}
+table{width:100%;border-spacing:0;text-align:center;empty-cells:show;table-layout:fixed;line-height:1.45;word-wrap:break-word}
+select{-webkit-appearance:none;background-color:#fff}
+article,aside,canvas,details,embed,figcaption,figure,main,menu,nav,section,summary{display:block}
+command,datalist,keygen,mark,meter,progress,rp,rt,ruby,time,wbr{display:inline}
+
+/* LINK */
+a,a:hover{text-decoration:none}
+
+/* FONT */
+body,input,select,textarea,button{font:1rem/1.45 Malgun Gothic, '맑은 고딕','애플 SD 산돌고딕 Neo',AppleSDGothicNeo,AppleGothic,Droid Sans,Tahoma,Dotum,Sans-serif;letter-spacing:-0.075em}
+
+/* COLOR */
+body,a,input,select,textarea{color:#050505}
+
+/* FORM */
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="search"],
+input[type="email"],
+input[type="time"],
+input[type="month"],
+input[type="date"],
+input[type="url"],
+select,textarea{width:100%;padding:0 0.4rem;border:1px solid #ebebbe;border-radius:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;font-size:1rem}
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="search"],
+input[type="email"],
+input[type="time"],
+input[type="month"],
+input[type="date"],
+input[type="url"]{height:3.6rem;-webkit-appearance:none}
+input[disabled=""],
+input[readonly=""]{background-color:#ececec}
+input[type="text"],
+input[type="image"],
+input[type="button"],
+input[type="submit"]{-webkit-appearance:none;-webkit-border-radius:0}
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{line-height:normal !important}
+input[type="text"]{border-radius:0}
+input[type="file"]{width:100%;height:100%;opacity:0;cursor:pointer}
+input:checked[type="checkbox"]{background-color:#fff}
+select{height:3.6rem;padding:0 2.1rem 0 0.4rem;background:url(../images/bg_select_arrow.png) no-repeat right center;background-size:2.1rem 1rem}
+button{background:none}
+
+/* HIDDEN */
+.ir,caption{overflow:hidden;width:0;height:0;margin:0;padding:0;font-size:0;text-indent:-5000em;line-height:0}
+.blind,hr,legend,input[type="hidden"]{position:absolute;left:-5000em;top:-5000em;font-size:1px;line-height:1px}
