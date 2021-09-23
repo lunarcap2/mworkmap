@@ -95,7 +95,7 @@ dl.ir {margin:0 auto 4rem;}
 .sec1{background-color:#fff;}
 .sec1 .titArea{padding-top:8rem;}
 .sec1 .titArea h2 { width: 36.5rem; height: 8.688rem; background: url(../images/sub1_tit_h2.png) no-repeat 0 0; background-size: 100%; }
-.sec1 .infoArea dl { width: 42rem; height: 22rem; background: url(../images/sub1_img.png) no-repeat 0 0; background-size:100% }
+.sec1 .infoArea dl { width: 40rem; height: 22rem; background: url(../images/sub1_img.png) no-repeat 0 0; background-size:100% }
 
 /* 참여자격 */
 .sec2{background-color:#fff;}
