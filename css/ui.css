@@ -107,7 +107,7 @@ dl.ir {margin:0 auto 4rem;}
 /* 침여혜택 */
 .sec3{background-color:#f0f4ff; padding:5rem 0 1rem 0 !important;}
 .sec3 .titArea h2 { width: 23.3rem; height: 11.5rem; background: url(../images/sub3_tit_h2.png) no-repeat 0 0; background-size: 100% }
-.sec3 .infoArea dl { width: 42rem; height: 34rem; background: url(../images/sub3_img.png) no-repeat 0 0; background-size:100%; margin-top:-3rem; }
+.sec3 .infoArea dl { width: 40rem; height: 33rem; background: url(../images/sub3_img.png) no-repeat 0 0; background-size:100%; margin-top:-3rem; }
 
 /* 위치 및 연락처 */
 .sec4{background:#f0f4ff url(../images/sub4_bg.png) no-repeat 1rem 43.5rem;background-size:/*24.5rem 16.7rem*/100%;}
